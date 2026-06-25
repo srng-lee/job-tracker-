@@ -33,8 +33,15 @@ export default function JobList({ jobs, loading, onDelete }: Props) {
 
   if (jobs.length === 0) {
     return (
-      <div className="bg-white rounded-xl border border-gray-200 px-6 py-12 text-center">
+      <div className="bg-white rounded-xl border border-gray-200 px-6 py-12 text-center space-y-4">
         <p className="text-sm text-gray-400">지원 내역이 없습니다. 위 폼에서 추가해보세요.</p>
+        <div className="inline-flex items-center gap-3 bg-violet-50 border border-violet-100 rounded-xl px-5 py-3.5 text-left">
+          <span className="text-2xl">🤖</span>
+          <div>
+            <p className="text-sm font-medium text-violet-700">면접 질문 자동 생성</p>
+            <p className="text-xs text-violet-500 mt-0.5">지원서를 추가하면 포지션에 맞는 면접 예상 질문을 바로 확인할 수 있어요.</p>
+          </div>
+        </div>
       </div>
     )
   }
