@@ -82,9 +82,12 @@ export default function JobList({ jobs, loading, onDelete }: Props) {
                   <div className="flex items-center justify-end gap-3">
                     <button
                       onClick={() => setSelectedJob(job)}
-                      className="text-xs text-blue-500 hover:text-blue-700 transition-colors font-medium"
+                      className="flex items-center gap-1 text-xs font-medium bg-violet-50 text-violet-600 hover:bg-violet-100 border border-violet-200 px-2.5 py-1 rounded-md transition-colors"
                     >
-                      AI 면접 질문
+                      <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                      </svg>
+                      면접 질문
                     </button>
                     <button
                       onClick={() => onDelete(job.id)}
