@@ -4,6 +4,7 @@ import type { Job } from './types'
 import JobForm from './components/JobForm'
 import JobList from './components/JobList'
 import DashboardStats from './components/DashboardStats'
+import JobReport from './components/JobReport'
 
 type NewJob = Omit<Job, 'id' | 'created_at' | 'updated_at'>
 
@@ -64,6 +65,7 @@ function App() {
         <JobForm onAdd={addJob} />
         <JobList jobs={jobs} loading={loading} onDelete={deleteJob} />
       </main>
+      <JobReport jobs={jobs} />
     </div>
   )
 }
