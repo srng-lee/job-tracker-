@@ -10,8 +10,9 @@ interface Props {
 const STATUS_OPTIONS: { value: JobStatus; label: string }[] = [
   { value: 'bookmarked', label: '북마크' },
   { value: 'applied', label: '지원완료' },
+  { value: 'document', label: '서류통과' },
   { value: 'interview', label: '면접' },
-  { value: 'offer', label: '오퍼' },
+  { value: 'offer', label: '최종합격' },
   { value: 'rejected', label: '불합격' },
 ]
 

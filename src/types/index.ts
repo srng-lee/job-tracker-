@@ -1,4 +1,4 @@
-export type JobStatus = 'bookmarked' | 'applied' | 'interview' | 'offer' | 'rejected'
+export type JobStatus = 'bookmarked' | 'applied' | 'document' | 'interview' | 'offer' | 'rejected'
 
 export interface Job {
   id: string

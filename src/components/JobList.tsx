@@ -5,14 +5,16 @@ import InterviewModal from './InterviewModal'
 const STATUS_LABEL: Record<JobStatus, string> = {
   bookmarked: '북마크',
   applied: '지원완료',
+  document: '서류통과',
   interview: '면접',
-  offer: '오퍼',
+  offer: '최종합격',
   rejected: '불합격',
 }
 
 const STATUS_COLOR: Record<JobStatus, string> = {
   bookmarked: 'bg-slate-100 text-slate-600',
   applied: 'bg-indigo-100 text-indigo-700',
+  document: 'bg-sky-100 text-sky-700',
   interview: 'bg-amber-100 text-amber-700',
   offer: 'bg-emerald-100 text-emerald-700',
   rejected: 'bg-red-100 text-red-600',
