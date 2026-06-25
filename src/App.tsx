@@ -3,6 +3,7 @@ import { supabase } from './lib/supabase'
 import type { Job } from './types'
 import JobForm from './components/JobForm'
 import JobList from './components/JobList'
+import DashboardStats from './components/DashboardStats'
 
 type NewJob = Omit<Job, 'id' | 'created_at' | 'updated_at'>
 
@@ -58,6 +59,7 @@ function App() {
         </div>
       </header>
 
+      <DashboardStats jobs={jobs} />
       <main className="max-w-5xl mx-auto px-6 py-8 space-y-6">
         <JobForm onAdd={addJob} />
         <JobList jobs={jobs} loading={loading} onDelete={deleteJob} />
